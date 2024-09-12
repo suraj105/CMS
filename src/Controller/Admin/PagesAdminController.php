@@ -27,11 +27,11 @@ class PagesAdminController extends AbstractController {
                     return;
                 }
                 else {
-                    $error = 'Der Eintrag konnte nicht angelegt werden (z.B. weil der Slug nicht existiert).';
+                    $error = 'The post can not be created';
                 }
             } 
             else {
-                $error = 'Das Formular wurde nicht vollständig ausgefüllt';
+                $error = 'Form needs to be filled completely';
             }
 
             $this->renderAdmin('pages/create', [

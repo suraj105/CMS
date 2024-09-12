@@ -5,9 +5,9 @@
         <thead>
             <tr>
                 <th>Id</th>
-                <th>Slug</th>
+                <th>Page</th>
                 <th>Titel</th>
-                <th>Aktionen</th>
+                <th>Action</th>
             </tr>
         </thead>
         <tbody>
@@ -19,20 +19,20 @@
                     <td>
                         <form method="POST" action="./?route=admin/page/delete">
                             <input type="hidden" name="id" value="<?php echo e($page->id); ?>" />
-                            <input type="submit" value="Löschen" class="button-as-link" />
+                            <input type="submit" value="delete" class="button-as-link" />
                         </form>
-                        <a href="./?route=admin/page/edit&id=<?php echo e($page->id); ?>">Editieren</a>
+                        <a href="./?route=admin/page/edit&id=<?php echo e($page->id); ?>">Edit</a>
                     </td>
                 </tr>
             <?php endforeach; ?>
         </tbody>
     </table>
 <?php else: ?>
-    <p>Es wurden noch keine Seiten angelegt.</p>
+    <p>There are no pages created</p>
 <?php endif; ?>
 
 <br /><hr /><br />
-<a href="./?route=admin/page/create">Neue Seite anlegen</a>
+<a href="./?route=admin/page/create">Create new pages</a>
 <br /><hr /><br />
 
 <input type="button" value="Log out!" onclick="window.location.href='./?route=admin/logout';">

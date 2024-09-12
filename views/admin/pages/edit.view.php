@@ -9,8 +9,8 @@
     <input type="text" name="title" id="pages-create-title" 
         value="<?php if(isset($_POST['title'])) { echo e($_POST['title']); } else { echo e($page->title); }?>" /><br />
 
-    <label for="pages-create-content">Inhalt:</label><br />
+    <label for="pages-create-content">Content:</label><br />
     <textarea name="content" id="pages-create-content"><?php if(isset($_POST['content'])) echo e($_POST['content']); else echo e($page->content); ?></textarea><br />
 
-    <input type="submit" value="Abschicken!" />
+    <input type="submit" value="Submit!" />
 </form>

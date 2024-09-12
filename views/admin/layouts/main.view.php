@@ -11,15 +11,34 @@
 </head>
 <body>
     <header>
-        <h1>Admin-Bereich</h1>
-        <p>Das hier ist der Admin-Bereich</p>
-        <?php /* <nav></nav> */ ?>
+        <h1>Admin</h1>
+        <?php
+        // Check if the 'route' parameter is set in the URL
+        if (isset($_GET['route'])) {
+            // Get the value of the 'route' parameter
+            $route = $_GET['route'];
+
+            // Check if the route is 'admin/login'
+            if ($route === 'admin/login') {
+                echo '<p>Login to create new pages below</p>';
+            }
+            // Check if the route is 'admin/page'
+            elseif ($route === 'admin/page') {
+                echo '<p>Create new pages below</p>';
+            }
+        } else {
+            // Default case if 'route' parameter is not set
+            echo '<p>Welcome! Please log in or navigate to create pages.</p>';
+        }
+        ?>
+
+
     </header>
     <main>
         <?php echo $content; ?>
     </main>
     <footer>
-        <p>Projekt: CMS vom PHP-Kurs <a href="./?route=admin/logout">(ausloggen)</a></p>
+        <p>Projekt: CMS</p>
     </footer>
 </body>
 </html>

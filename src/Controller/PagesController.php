@@ -17,7 +17,6 @@ class PagesController extends AbstractController {
             return $this->showError404();
         }
 
-        // var_dump($page);
         $this->render('pages/showPage', [
             'page' => $page
         ]);

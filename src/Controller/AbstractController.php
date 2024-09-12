@@ -11,7 +11,6 @@ abstract class AbstractController {
     protected function showError404() {
         http_response_code(404);
         $this->render("abstract/showError404", []);
-        // var_dump("error404() wurde ausgeführt.");
     }
 
     protected function render($path, array $data = []) {
@@ -22,9 +21,7 @@ abstract class AbstractController {
         ob_end_clean();
 
         $navigation = $this->pagesRepository->getNavigation();
-        // var_dump($navigation);
-        // die();
-        
+      +
         require __DIR__ . '/../../views/frontend/layouts/main.view.php';
     }
 

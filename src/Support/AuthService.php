@@ -24,12 +24,10 @@ class AuthService {
             $user = $stmt->fetch();
 
             if (!empty($user)) {
-                // Es gibt eine Session, und der Benutzer ist noch in der Datenbank
                 return;
             }
         }
 
-        // Benutzer nicht eingeloggt
         header("Location: ./?route=admin/login");
         die();
     }
