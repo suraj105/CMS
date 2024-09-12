@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39e7cadc-099b-4da1-9865-a0186293c747" name="Changes" comment="" />
+    <list default="true" id="39e7cadc-099b-4da1-9865-a0186293c747" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/all.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/all.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/db-connect.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/db-connect.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/functions.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/functions.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AbstractController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AbstractController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/PagesRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/PagesRepository.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +20,9 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\xampp\php\php.exe" />
   <component name="ProjectColorInfo">{
@@ -27,6 +38,7 @@
   &quot;keyToString&quot;: {
     &quot;PHP Script.index.php.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/programming/cms&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -52,7 +64,7 @@
       <option name="presentableId" value="Default" />
       <updated>1726064806313</updated>
       <workItem from="1726064807331" duration="3598000" />
-      <workItem from="1726125236634" duration="9292000" />
+      <workItem from="1726125236634" duration="12152000" />
     </task>
     <servers />
   </component>

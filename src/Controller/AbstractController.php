@@ -27,4 +27,14 @@ abstract class AbstractController {
         
         require __DIR__ . '/../../views/frontend/layouts/main.view.php';
     }
+
+    protected function renderAdmin($path, array $data = []) {
+        ob_start();
+        extract($data);
+        require __DIR__ . '/../../views/admin/' . $path . '.view.php';
+        $content = ob_get_contents();
+        ob_end_clean();
+        
+        require __DIR__ . '/../../views/admin/layouts/main.view.php';
+    }
 }
