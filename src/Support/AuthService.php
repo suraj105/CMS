@@ -55,4 +55,10 @@ class AuthService {
         $this->ensureSession();
         unset($_SESSION['adminLogin']);
     }
+
+    public function isLoggedIn(): bool {
+        $this->ensureSession(); // Start session if not already started
+        return isset($_SESSION['adminLogin']); // Check if the user is logged in
+    }
+
 }

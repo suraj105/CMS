@@ -6,15 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="39e7cadc-099b-4da1-9865-a0186293c747" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/AbstractController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AbstractController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/PagesAdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/PagesAdminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/PagesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PagesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/LoginController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Support/AuthService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Support/AuthService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/simple.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/simple.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/admin/layouts/main.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/layouts/main.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin/login/login.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/login/login.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin/pages/create.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/pages/create.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin/pages/edit.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/pages/edit.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin/pages/index.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/pages/index.view.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/frontend/layouts/main.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/frontend/layouts/main.view.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +64,7 @@
       <option name="presentableId" value="Default" />
       <updated>1726064806313</updated>
       <workItem from="1726064807331" duration="3598000" />
-      <workItem from="1726125236634" duration="18393000" />
+      <workItem from="1726125236634" duration="22148000" />
     </task>
     <servers />
   </component>

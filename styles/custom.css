@@ -2,16 +2,23 @@ input[type="submit"].button-as-link,
 button.button-as-link {
     -webkit-appearance: none;
     appearance: none;
-    padding: 0;
-    margin: 0;
-    display: inline;
-    text-decoration: underline;
-    background-color: transparent;
-    border: 0 solid transparent;
-    color: #0D47A1; 
+    padding: 10px 20px; /* Adds padding around the button */
+    margin: 10px auto; /* Adds margin around the button, centers it if it's in a container */
+    display: inline-block; /* Ensures the button doesn't take full width */
+    text-decoration: none;
+    background-color: #0D47A1; /* Button background color */
+    color: white; /* Text color */
     cursor: pointer;
     font-size: inherit;
-    border: none;
-    width: auto;
-    border-radius: 0;
+    border: none; /* No border */
+    width: 150px; /* Fixed width */
+    max-width: 200px; /* Optional: limits the maximum width */
+    border-radius: 5px; /* Optional: adds rounded corners */
+    text-align: center; /* Centers the text inside the button */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+input[type="submit"].button-as-link:hover,
+button.button-as-link:hover {
+    background-color: #0b3c8b; /* Darker background on hover */
 }

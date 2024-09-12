@@ -21,22 +21,37 @@ class LoginController extends AbstractController {
     }
 
     public function login() {
+        // Use authService's isLoggedIn check to avoid direct session access
+        if ($this->authService->isLoggedIn()) {
+            // User is already logged in, redirect to the admin page
+            header("Location: ./?route=admin/page");
+            exit; // Ensure script stops after the redirect
+        }
+
+        // Handle login if POST data is submitted
         if (!empty($_POST)) {
             $username = @(string) ($_POST['username'] ?? '');
             $password = @(string) ($_POST['password'] ?? '');
 
+            // Check if both username and password are provided
             if (!empty($username) && !empty($password)) {
                 $loginOk = $this->authService->handleLogin($username, $password);
+
+                // If login is successful, redirect to the admin page
                 if ($loginOk) {
                     header("Location: ./?route=admin/page");
-                    return;
+                    exit; // Stop further script execution after redirect
                 }
             }
+
+            // Redirect to the login page if login fails
             header("Location: ./?route=admin/login");
-            return;
+            exit; // Stop further script execution after redirect
         }
-        else {
-            $this->renderAdmin('login/login', []);
-        }
+
+        // If no POST data, render the login page
+        $this->renderAdmin('login/login', []);
     }
+
+
 }

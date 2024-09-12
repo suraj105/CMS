@@ -30,7 +30,13 @@
             // Default case if 'route' parameter is not set
             echo '<p>Welcome! Please log in or navigate to create pages.</p>';
         }
+
+        // Output the login button
+        echo '<br>';
+        echo '<a href="./?page=index">Go to CMS!</a>';
         ?>
+
+
 
 
     </header>

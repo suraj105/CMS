@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +14,14 @@
     <header>
         <h1>Context Management System</h1>
         <p> A sample website for context Management </p>
-        <input type="button" value="Log in !" onclick="window.location.href='./?route=admin/login';">
+        <?php
+        if (isset($_SESSION['adminLogin']) && $_SESSION['adminLogin'] === true) {
+            echo '<input type="button" value="Log out!" onclick="window.location.href=\'./?route=admin/logout\';">';
+        } else {
+            echo '<input type="button" value="Log in!" onclick="window.location.href=\'./?route=admin/login\';">';
+        }
+        ?>
+
         <nav>
             <?php foreach($navigation AS $navigationElement): ?>
                 <a href="./?<?php echo http_build_query(['page' => $navigationElement->slug]); ?>">
@@ -26,7 +34,7 @@
         <?php echo $content; ?>
     </main>
     <footer>
-        <p>Projekt: CMS vom PHP-Kurs</p>
+        <p>Projekt: CMS</p>
     </footer>
 </body>
 </html>
