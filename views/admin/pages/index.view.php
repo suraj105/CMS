@@ -33,3 +33,6 @@
 
 <br /><hr /><br />
 <a href="./?route=admin/page/create">Neue Seite anlegen</a>
+<br /><hr /><br />
+
+<input type="button" value="Log out!" onclick="window.location.href='./?route=admin/logout';">

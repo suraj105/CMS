@@ -17,7 +17,7 @@ class LoginController extends AbstractController {
 
     public function logout() {
         $this->authService->logout();
-        header("Location: ./?route=admin/login");
+        header("Location: ./?page=index");
     }
 
     public function login() {

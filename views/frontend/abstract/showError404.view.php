@@ -1,5 +1,2 @@
-<?php
+<h1>Error 404: Not found , please check again</h1>
 
-$password = password_hash('top-secret', PASSWORD_DEFAULT);
-
-var_dump($password);

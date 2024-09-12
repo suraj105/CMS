@@ -13,6 +13,7 @@
     <header>
         <h1>Ein eigenes CMS</h1>
         <p>Hier finden Sie eine schöne CMS-App</p>
+        <input type="button" value="Log in !" onclick="window.location.href='./?route=admin/login';">
         <nav>
             <?php foreach($navigation AS $navigationElement): ?>
                 <?php /* <a href="index.php?page=<?php echo e($navigationElement->slug); ?>"><?php echo e($navigationElement->title); ?></a> */ ?>
@@ -20,7 +21,6 @@
                     <?php echo e($navigationElement->title); ?>
                 </a>
             <?php endforeach;?>
-            <?php /* var_dump($navigation); */ ?>
         </nav>
     </header>
     <main>
