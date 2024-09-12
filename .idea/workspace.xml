@@ -7,11 +7,8 @@
     <list default="true" id="39e7cadc-099b-4da1-9865-a0186293c747" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inc/all.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/all.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inc/db-connect.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/db-connect.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inc/functions.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/functions.inc.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/AbstractController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AbstractController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/PagesRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/PagesRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/admin/layouts/main.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/layouts/main.view.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +61,7 @@
       <option name="presentableId" value="Default" />
       <updated>1726064806313</updated>
       <workItem from="1726064807331" duration="3598000" />
-      <workItem from="1726125236634" duration="12152000" />
+      <workItem from="1726125236634" duration="15526000" />
     </task>
     <servers />
   </component>

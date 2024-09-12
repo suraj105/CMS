@@ -19,7 +19,7 @@
         <?php echo $content; ?>
     </main>
     <footer>
-        <p>Projekt: CMS vom PHP-Kurs</p>
+        <p>Projekt: CMS vom PHP-Kurs <a href="./?route=admin/logout">(ausloggen)</a></p>
     </footer>
 </body>
 </html>

@@ -24,6 +24,18 @@ $container->add('notFoundController', function() use($container) {
         $container->get('pagesRepository')
     );
 });
+$container->add('loginController', function() use($container) {
+    return new \App\Controller\Admin\LoginController(
+        $container->get('pagesRepository'),
+        $container->get('authService')
+    );
+});
+$container->add('authService', function() use($container) {
+    return new \App\Support\AuthService(
+        $container->get('pdo')
+    );
+});
+
 
 // var_dump($container->get('pagesController'));
 // die();
@@ -36,20 +48,40 @@ if ($route === 'page') {
     $page = @(string) ($_GET['page'] ?? 'index');
     $pagesController->showPage($page);
 } 
+else if ($route === 'admin/login') {
+    $loginController = $container->get('loginController');
+    $loginController->login();
+}
+else if ($route === 'admin/logout') {
+    $loginController = $container->get('loginController');
+    $loginController->logout();
+}
 else if ($route === 'admin/page') {
+    $authService = $container->get('authService');
+    $authService->ensureLogin();
+
     $pagesAdminController = $container->get('pagesAdminController');
     $pagesAdminController->index();
 }
 else if ($route === 'admin/page/create') {
+    $authService = $container->get('authService');
+    $authService->ensureLogin();
+
     $pagesAdminController = $container->get('pagesAdminController');
     $pagesAdminController->create();
 }
 else if ($route === 'admin/page/delete') {
+    $authService = $container->get('authService');
+    $authService->ensureLogin();
+
     $pagesAdminController = $container->get('pagesAdminController');
     $id = @(int) ($_POST['id'] ?? 0);
     $pagesAdminController->delete($id);
 }
 else if ($route === 'admin/page/edit') {
+    $authService = $container->get('authService');
+    $authService->ensureLogin(); 
+
     $pagesAdminController = $container->get('pagesAdminController');
     $id = @(int) ($_GET['id'] ?? 0);
     $pagesAdminController->edit($id);
