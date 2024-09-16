@@ -5,8 +5,6 @@ use App\Support\AuthService;
 $authService = new AuthService($pdo);
 
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,9 +22,7 @@ $authService = new AuthService($pdo);
         <p> A sample website for a demo context Management System </p>
         <?php
         if ($authService->isLoggedIn()) {
-            echo '<h4> Hello Admin</h4>' .'<input type="button" value="Log out!" onclick="window.location.href=\'./?route=admin/logout\';">';
-            echo '<input type="button" value="Admin Area" onclick="window.location.href=\'./?route=admin/page\';">';
-
+            echo '<h4> Hello Admin</h4>'. '<input type="button" value="Admin Area" onclick="window.location.href=\'./?route=admin/page\';">' ;
         } else {
             echo '<input type="button" value="Log in!" onclick="window.location.href=\'./?route=admin/login\';">';
         }
@@ -43,6 +39,13 @@ $authService = new AuthService($pdo);
     <main>
         <?php echo $content; ?>
     </main>
+
+    <?php
+    if (isset($_SESSION['adminLogin'])) {
+        echo '<br /><hr/><br />';
+        echo '<input type="button" value="Log out!" onclick="window.location.href=\'./?route=admin/logout\';">';
+    }
+    ?>
     <footer>
         <p>Projekt:CMS</p>
     </footer>
