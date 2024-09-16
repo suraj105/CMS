@@ -6,6 +6,7 @@ use PDO;
 
 class AuthService {
 
+
     public function __construct(protected PDO $pdo) {}
 
     protected function ensureSession() {
@@ -57,7 +58,7 @@ class AuthService {
     }
 
     public function isLoggedIn(): bool {
-        $this->ensureSession(); // Start session if not already started
+        $this->ensureSession(); // Starts session if not already started
         return isset($_SESSION['adminLogin']); // Check if the user is logged in
     }
 

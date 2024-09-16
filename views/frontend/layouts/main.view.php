@@ -1,3 +1,11 @@
+<?php
+global $pdo;
+
+use App\Support\AuthService;
+$authService = new AuthService($pdo);
+
+?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,10 +21,12 @@
 <body>
     <header>
         <h1>Context Management System</h1>
-        <p> A sample website for context Management </p>
+        <p> A sample website for a demo context Management System </p>
         <?php
-        if (isset($_SESSION['adminLogin']) && $_SESSION['adminLogin'] === true) {
-            echo '<input type="button" value="Log out!" onclick="window.location.href=\'./?route=admin/logout\';">';
+        if ($authService->isLoggedIn()) {
+            echo '<h4> Hello Admin</h4>' .'<input type="button" value="Log out!" onclick="window.location.href=\'./?route=admin/logout\';">';
+            echo '<input type="button" value="Admin Area" onclick="window.location.href=\'./?route=admin/page\';">';
+
         } else {
             echo '<input type="button" value="Log in!" onclick="window.location.href=\'./?route=admin/login\';">';
         }
@@ -34,7 +44,7 @@
         <?php echo $content; ?>
     </main>
     <footer>
-        <p>Projekt: CMS</p>
+        <p>Projekt:CMS</p>
     </footer>
 </body>
 </html>
