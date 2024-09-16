@@ -1,4 +1,4 @@
-<h1>Eine neue Seite anlegen</h1>
+<h1>Create a new page</h1>
 
 <?php if(!empty($error)): ?>
     <p><?php echo e($error); ?></p>

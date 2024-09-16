@@ -36,10 +36,6 @@ $container->add('authService', function() use($container) {
     );
 });
 
-
-// var_dump($container->get('pagesController'));
-// die();
-
 $route = @(string) ($_GET['route'] ?? 'page');
 
 if ($route === 'page') {
